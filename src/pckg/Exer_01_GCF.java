@@ -10,14 +10,18 @@ public class Exer_01_GCF {
 		/* Write here a program that generates 100000 pairs of numbers
 		between [1, 5000] to check that the function calculates the GCF.*/
 		Random r= new Random();
-		for (int i = 0; i <= 100000; i++) {
+		int correct = 0;
+		int wrong = 0;
+		for (int i = 0; i < 100000; i++) {
 			int r1 = r.nextInt(4999)+1;
 			int r2 = r.nextInt(4999)+1;
 			if (iterativeGCF(r1, r2) == GCF(r1,r2)){
-				System.out.println("Correct");
-			}else{
-				System.out.println("Wrong");
+				correct++;
+			} else {
+				wrong++;
 			}
+			System.out.println("Correct cases: " + correct);
+			System.out.println("Wrong cases: " + wrong);
 		}
 	}
 	
@@ -27,10 +31,10 @@ public class Exer_01_GCF {
 	public static int GCF(int n1,int n2){
 		if(n1==n2){
 			return n1;
-		} else if (a > b) {
-            return mcd(a - b, b);
+		} else if (n1 > n2) {
+            return GCF(n1 - n2, n2);
         } else {
-            return mcd(a, b - a);
+            return GCF(n1, n2 - n1);
         }
 	}
 

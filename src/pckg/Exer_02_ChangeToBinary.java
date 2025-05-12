@@ -7,7 +7,7 @@ public class Exer_02_ChangeToBinary {
 
 		/* COMPLETE */
 		//Perform some tests here
-
+		
 	}
 	
 	
