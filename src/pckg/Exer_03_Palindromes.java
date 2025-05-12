@@ -11,12 +11,28 @@ public class Exer_03_Palindromes {
 	public static void main (String [] args) {
 		/* COMPLETE */
 		// Using functions genPalindrom and genNoPalindrom, test your code here
-
+		checkPalindrome(genPalindrome());
+		checkPalindrome(genNoPalindrome());
+		checkPalindrome(genPalindrome());
+		checkPalindrome(genNoPalindrome());
+		checkPalindrome(genPalindrome());
+		checkPalindrome(genNoPalindrome());
+		checkPalindrome(genPalindrome());
 	}
 	
 	/* COMPLETE */
 	// write here the code to determine whether a string is a palindrome or not
-
+	public static boolean checkPalindrome(String s) {
+        return checkPalindromeCompare(s, 0, s.length() - 1);
+    }
+	public static boolean checkPalindromeCompare(String s,int x,int y){
+		if(x>=y){
+			return true;
+		}else if(s.charAt(x) != s.charAt(y)){
+			return false;
+		}
+		return checkPalindromeCompare(s,x+1,y-1);
+	}
 	
 	/*DO NOT MODIFY CODE BELOW*/
 	private static String genPalindrome() {

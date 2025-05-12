@@ -9,6 +9,7 @@ public class Exer_02_ChangeToBinary {
 		//Perform some tests here
 		
 		System.out.println(toBinaryString(5));
+		System.out.println(toBinaryString(729));
 	}
 	
 	
