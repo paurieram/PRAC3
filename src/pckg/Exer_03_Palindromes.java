@@ -11,13 +11,13 @@ public class Exer_03_Palindromes {
 	public static void main (String [] args) {
 		/* COMPLETE */
 		// Using functions genPalindrom and genNoPalindrom, test your code here
-		checkPalindrome(genPalindrome());
-		checkPalindrome(genNoPalindrome());
-		checkPalindrome(genPalindrome());
-		checkPalindrome(genNoPalindrome());
-		checkPalindrome(genPalindrome());
-		checkPalindrome(genNoPalindrome());
-		checkPalindrome(genPalindrome());
+		System.out.println(checkPalindrome(genPalindrome()));
+		System.out.println(checkPalindrome(genNoPalindrome()));
+		System.out.println(checkPalindrome(genPalindrome()));
+		System.out.println(checkPalindrome(genNoPalindrome()));
+		System.out.println(checkPalindrome(genPalindrome()));
+		System.out.println(checkPalindrome(genNoPalindrome()));
+		System.out.println(checkPalindrome(genPalindrome()));
 	}
 	
 	/* COMPLETE */

@@ -8,11 +8,31 @@ public class Exer_04_Hamming {
     public static void main (String [] args) {
         /* COMPLETE */
 
+        System.out.println(checkHamming(genHamming()));
+        System.out.println(checkHamming(genNotHamming()));
+        System.out.println(checkHamming(genHamming()));
+        System.out.println(checkHamming(genNotHamming()));
+        System.out.println(checkHamming(genHamming()));
+        System.out.println(checkHamming(genNotHamming()));
+        System.out.println(checkHamming(genHamming()));
     }
 
     /* COMPLETE */
     // write here the code to determine whether a number is a Hamming number or not
+    public static boolean checkHamming(int n){
+        if(n==1){
+            return true;
+        }else if (n%2==0){
+            return checkHamming(n/2);
+        }else if (n%3==0){
+            return checkHamming(n/3);
+        }else if (n%5==0){
+            return checkHamming(n/5);
+        }else{
+            return false;
+        }
 
+    }
 
     /*DO NOT MODIFY CODE BELOW*/
     private static int genHamming(){
