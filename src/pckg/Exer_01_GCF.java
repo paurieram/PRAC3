@@ -20,9 +20,9 @@ public class Exer_01_GCF {
 			} else {
 				wrong++;
 			}
-			System.out.println("Correct cases: " + correct);
-			System.out.println("Wrong cases: " + wrong);
 		}
+		System.out.println("Correct cases: " + correct);
+		System.out.println("Wrong cases: " + wrong);
 	}
 	
 	
